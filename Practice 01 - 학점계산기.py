@@ -39,7 +39,6 @@ def gradein(gradeinfo, gradelist, leccode=dict()): #input
     #leccode에 default값으로 dict() 넣은 것처럼 gradelist에도 gradetype() default값으로 넣으려 했는데 이러면 main보다 gradetype()가 먼저 실행되어서 포기했습니다.
     if len(gradelist) == 0:
         gradelist = gradetype()
-    print(gradelist)
     print("학점에 음수를 입력하면 프로그램이 종료됩니다.")
     while True:
         code=input("과목명을 입력하세요: ")
@@ -128,9 +127,6 @@ gradeexch=dict()
 lecturecode=dict()
 work = 1
 while work:
-    print(gradeinfo)
-    print(gradeexch)
-    print(lecturecode)
     print("작업을 선택하세요.")
     print("0. 프로그램 종료")
     print("1. 입력")
